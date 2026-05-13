@@ -1,5 +1,68 @@
+<<<<<<< HEAD
 error: can't find bin `mi_libreria` at path `C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\src\main.rs`
  --> C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\Cargo.toml
 error: can't find bin `mi_libreria` at path `C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\src\main.rs`
  --> C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\Cargo.toml
 error: could not compile due to 2 previous target resolution errors
+=======
+   0.012184400s  INFO prepare_target{force=false package_id=libreria_estructuras v0.1.0 (D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica) target="libreria_estructuras"}: cargo::core::compiler::fingerprint: fingerprint error for libreria_estructuras v0.1.0 (D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica)/Check { test: false }/TargetInner { name: "libreria_estructuras", doc: true, ..: with_path("D:\\vscode\\Libreria-Estructura-Dinamica-de-Datos-Rust-\\Libreria_Estructura_dinamica\\src\\main.rs", Edition2021) }
+   0.012225500s  INFO prepare_target{force=false package_id=libreria_estructuras v0.1.0 (D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica) target="libreria_estructuras"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\target\debug\.fingerprint\libreria_estructuras-2c35cdcff6f89c34\bin-libreria_estructuras`
+
+Caused by:
+    El sistema no puede encontrar el archivo especificado. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+   0.020245200s  INFO prepare_target{force=false package_id=libreria_estructuras v0.1.0 (D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica) target="libreria_estructuras"}: cargo::core::compiler::fingerprint: fingerprint error for libreria_estructuras v0.1.0 (D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica)/Check { test: true }/TargetInner { name: "libreria_estructuras", doc: true, ..: with_path("D:\\vscode\\Libreria-Estructura-Dinamica-de-Datos-Rust-\\Libreria_Estructura_dinamica\\src\\main.rs", Edition2021) }
+   0.020265900s  INFO prepare_target{force=false package_id=libreria_estructuras v0.1.0 (D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica) target="libreria_estructuras"}: cargo::core::compiler::fingerprint:     err: failed to read `D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\target\debug\.fingerprint\libreria_estructuras-e321f2df7634be69\test-bin-libreria_estructuras`
+
+Caused by:
+    El sistema no puede encontrar el archivo especificado. (os error 2)
+
+Stack backtrace:
+   0: git_midx_writer_dump
+   1: git_midx_writer_dump
+   2: git_midx_writer_dump
+   3: git_midx_writer_dump
+   4: git_filter_source_repo
+   5: git_filter_source_repo
+   6: git_filter_source_repo
+   7: git_filter_source_repo
+   8: git_filter_source_repo
+   9: git_filter_source_repo
+  10: git_filter_source_repo
+  11: git_libgit2_prerelease
+  12: <unknown>
+  13: <unknown>
+  14: <unknown>
+  15: <unknown>
+  16: git_midx_writer_dump
+  17: git_filter_source_repo
+  18: git_midx_writer_dump
+  19: BaseThreadInitThunk
+  20: RtlUserThreadStart
+    Checking libreria_estructuras v0.1.0 (D:\vscode\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica)
+error: could not compile `libreria_estructuras` (bin "libreria_estructuras") due to 4 previous errors
+warning: build failed, waiting for other jobs to finish...
+error: could not compile `libreria_estructuras` (bin "libreria_estructuras" test) due to 4 previous errors
+>>>>>>> 73344c8b3f2510cabbaee377ce5ded1b0b376281
