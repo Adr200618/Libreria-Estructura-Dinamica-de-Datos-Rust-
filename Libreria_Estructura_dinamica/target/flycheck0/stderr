@@ -1,5 +1,5 @@
-error: can't find bin `mi_libreria` at path `C:\Users\angel\OneDrive\Desktop\Visual Studio Code\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\src\main.rs`
- --> C:\Users\angel\OneDrive\Desktop\Visual Studio Code\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\Cargo.toml
-error: can't find bin `mi_libreria` at path `C:\Users\angel\OneDrive\Desktop\Visual Studio Code\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\src\main.rs`
- --> C:\Users\angel\OneDrive\Desktop\Visual Studio Code\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\Cargo.toml
+error: can't find bin `mi_libreria` at path `C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\src\main.rs`
+ --> C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\Cargo.toml
+error: can't find bin `mi_libreria` at path `C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\src\main.rs`
+ --> C:\Users\MARY POLLA\Documents\URU\Programacion Visual\Libreria-Estructura-Dinamica-de-Datos-Rust-\Libreria_Estructura_dinamica\Cargo.toml
 error: could not compile due to 2 previous target resolution errors
