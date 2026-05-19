@@ -1,7 +1,5 @@
-pub struct Logger;
+use crate::helpers::file_writer::escribir_archivo;
 
-impl Logger {
-    pub fn log(msg: &str) {
-        println!("[LOG]: {}", msg);
-    }
+pub fn log(mensaje: &str) {
+    escribir_archivo("logs/app.log", mensaje);
 }

@@ -1,12 +1,12 @@
 use std::fs::OpenOptions;
 use std::io::Write;
 
-pub fn write_file(path: &str, text: &str) {
-    let mut f = OpenOptions::new()
+pub fn escribir_archivo(ruta: &str, contenido: &str) {
+    let mut archivo = OpenOptions::new()
         .create(true)
         .append(true)
-        .open(path)
+        .open(ruta)
         .unwrap();
 
-    writeln!(f, "{}", text).unwrap();
+    writeln!(archivo, "{}", contenido).unwrap();
 }

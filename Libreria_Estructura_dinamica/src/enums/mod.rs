@@ -1,1 +1,1 @@
-pub mod tipo_nodo;
+pub mod recorrido;

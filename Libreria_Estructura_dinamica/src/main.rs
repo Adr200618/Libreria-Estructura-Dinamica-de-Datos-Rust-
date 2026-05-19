@@ -1,52 +1,50 @@
 mod estructuras;
 mod helpers;
-
-use crate::estructuras::pila::Pila;
-use crate::estructuras::cola::Cola;
-use crate::estructuras::arbol::Nodo;
-use crate::estructuras::grafo::Mapa;
-
-use crate::helpers::logger::Logger;
-use crate::helpers::file_writer::write_file;
-
+mod traits;
+mod enums;
+use estructuras::{
+arbol::Arbol,
+pila::Pila,
+cola::Cola,
+mapa::Mapa,
+};
+use std::io;
 fn main() {
+let mut arbol = Arbol::new();
+let mut pila = Pila::new();
+let mut cola = Cola::new();
+let mut mapa = Mapa::new();
+loop {
+println!("\n===== LIBRERIA DE ESTRUCTURAS =====");
+println!("1. Arbol");
+println!("2. Pila");
+println!("3. Cola");
+println!("4. Mapa");
+println!("0. Salir");
+let mut opcion = String::new();
+io::stdin().read_line(&mut opcion).unwrap();
+match opcion.trim() {
+"1" => {
+arbol.cargar_desde_archivo("datos_arbol.txt");
 
-    Logger::log("Inicio del programa");
-
-    // PILA
-    let mut pila = Pila::new();
-
-    pila.push(10);
-    pila.push(20);
-
-    // COLA
-    let mut cola = Cola::new();
-
-    cola.enqueue(1);
-    cola.enqueue(2);
-
-    // ARBOL
-
-    let arbol = Nodo::new(50);
-
-    // MAPA
-
-    let mut mapa = Mapa::new();
-
-    mapa.insert("Edad".to_string(), 20);
-    mapa.insert("Semestre".to_string(), 5);
-
-    // ARCHIVOS
-
-    write_file("test.txt", "Hola desde Rust");
-
-    // RESULTADOS
-
-    println!("Pila pop: {:?}", pila.pop());
-
-    println!("Cola dequeue: {:?}", cola.dequeue());
-
-    println!("Nodo del arbol: {}", arbol.valor);
-
-    println!("Contenido del mapa: {:?}", mapa.data);
+arbol.mostrar();
+arbol.dfs();
+arbol.bfs();
+}
+"2" => {
+pila.cargar_desde_archivo("datos_pila.txt");
+pila.mostrar();
+}
+"3" => {
+cola.cargar_desde_archivo("datos_cola.txt");
+cola.mostrar();
+}
+"4" => {
+mapa.cargar_desde_archivo("datos_mapas.txt");
+mapa.mostrar();
+}
+"0" => break,
+_ => println!("Opcion invalida"),
+}
+}
 }
